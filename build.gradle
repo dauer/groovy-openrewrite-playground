@@ -1,0 +1,19 @@
+plugins {
+    id 'groovy'
+    id 'java'
+    id "org.openrewrite.rewrite" version "6.28.0"  //  "6.27.2" Works?!
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.codehaus.groovy:groovy-all:3.0.18"
+}
+
+rewrite {
+    configFile = project.getRootProject().file("rewrite.yml")
+    activeRecipe("dk.workbench.openrewrite.groovy")
+}

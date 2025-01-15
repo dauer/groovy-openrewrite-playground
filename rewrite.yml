@@ -1,0 +1,6 @@
+type: specs.openrewrite.org/v1beta/recipe
+name: dk.workbench.openrewrite.groovy
+recipeList:
+  - org.openrewrite.java.ChangePackage:
+      oldPackageName: dk.workbench.playground
+      newPackageName: dk.workbench.openrewrite.playground
