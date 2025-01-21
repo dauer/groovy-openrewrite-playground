@@ -1,4 +1,4 @@
-# Groovy Openrewrite Playground
+# Groovy OpenRewrite Playground
 
 Playing around with [OpenRewrite](https://docs.openrewrite.org) for automating [Groovy](https://groovy-lang.org/) upgrades...
 
@@ -38,11 +38,11 @@ Generating a correct patch file `build/reports/rewrite/rewrite.patch`
     @@ -1,4 +1,4 @@ dk.workbench.openrewrite.groovy
     -package dk.workbench.playground
     +package dk.workbench.openrewrite.playground
-    
+
     class Pair {
 
 The `6.28.0` version of the plugin uses OpenRewrite [8.41.0](https://github.com/openrewrite/rewrite/releases/tag/v8.41.0) which includes this
-Support "Groovy declared constructors" [#4706](https://github.com/openrewrite/rewrite/pull/4706) patch that fixes this
-issue " Groovy parser fails to parse constructor declarations" [#4704](https://github.com/openrewrite/rewrite/issues/4704).
+"Support Groovy declared constructors" [#4706](https://github.com/openrewrite/rewrite/pull/4706) patch that fixes this
+issue "Groovy parser fails to parse constructor declarations" [#4704](https://github.com/openrewrite/rewrite/issues/4704).
 
-But as far as I can see it introduces a new issue: OpenRewrite can no longer parse classes with constructors...  
+But as far as I can see it introduces a new issue: OpenRewrite can no longer parse classes with constructors...
