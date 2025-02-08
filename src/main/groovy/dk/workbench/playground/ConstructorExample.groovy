@@ -8,17 +8,17 @@ import groovy.transform.CompileStatic
  */
 
 @CompileStatic
-class Pair {
+class ConstructorExample {
 
     String first
     String second
 
-    Pair() {
+    ConstructorExample() {
         first = 'John'
         second = 'Doe'
     }
 
-    Pair(String first, String second) {
+    ConstructorExample(String first, String second) {
         this.first = first
         this.second = second
     }
