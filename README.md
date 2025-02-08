@@ -4,10 +4,16 @@ Playing around with [OpenRewrite](https://docs.openrewrite.org) for automating [
 
 ## Issues
 
+---
+
 ### Classes with Constructors
+
+> Fixed from version 7.0.6+ https://github.com/openrewrite/rewrite/pull/4950
 
 I have a simple class [Pair](src/main/groovy/dk/workbench/playground/Pair.groovy) with a constructor but OpenRewrite
 Gradle [plugin](https://docs.openrewrite.org/reference/gradle-plugin-configuration) from version `6.28.0+` fails to parse it?
+
+Running `./gradlew rewriteDryRun` fails in parsing the class:
 
     > Task :rewriteDryRun
     Validating active recipes
@@ -18,7 +24,7 @@ Gradle [plugin](https://docs.openrewrite.org/reference/gradle-plugin-configurati
     All sources parsed, running active recipes: dk.workbench.openrewrite.groovy
     Applying recipes would make no changes. No report generated.
 
-If I downgrade OpenRewrite to version `6.27.2` it works just fine.
+If I downgrade the OpenRewrite Gradle plugin to version `6.27.2` it works just fine:
 
     > Task :rewriteDryRun
     Validating active recipes
