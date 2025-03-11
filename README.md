@@ -9,6 +9,8 @@ moved to `package dk.workbench.openrewrite.playground`.
 
 ## Open issues
 
+- Groovy [Enums](./src/main/groovy/dk/workbench/playground/EnumExample.groovy)
+
 ---
 
 ## Fixed issues
