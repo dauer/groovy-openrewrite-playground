@@ -1,4 +1,4 @@
-package dk.workbench.playground
+package dk.workbench.openrewrite.playground
 
 import groovy.transform.CompileStatic
 
